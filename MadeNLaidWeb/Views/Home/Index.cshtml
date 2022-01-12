@@ -1,0 +1,37 @@
+﻿@using System.Linq
+@model IEnumerable<StatutoryInstrument>
+
+@{
+    ViewData["Title"] = "Made n Laid Statutory Instruments";
+}
+
+<section>
+    <div class="container">
+            <h1>Instruments</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Made</td>
+                        <td>Laid</td>
+                        <td>Title</td>
+                        <td>Tweeted</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var si in Model)
+                    {
+                        var madeDate = si.MadeDate.ToString("yyyy-MM-dd");
+                        var laidDate = si.LaidDate.ToString("yyyy-MM-dd");
+                        var isTweeted = si.IsTweeted;
+
+                        <tr>
+                            <td>@madeDate</td>
+                            <td>@laidDate</td>
+                            <td>@Html.ActionLink(si.Name, "Instrument", "Home", new { Id = si.Id.Split('/').Last() })</td>
+                            <td>@isTweeted</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+    </div>
+</section>

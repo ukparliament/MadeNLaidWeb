@@ -1,0 +1,54 @@
+﻿@using System.Linq
+@model StatutoryInstrument
+
+@{
+    ViewData["Title"] = "Made n Laid Statutory Instruments";
+}
+
+<section>
+    <div class="container">
+        @{
+            var title = Model.Name;
+            var madeDate = Model.MadeDate.ToString("yyyy-MM-dd");
+            var laidDate = Model.LaidDate.ToString("yyyy-MM-dd");
+            var LayingBodyName = Model.LayingBodyName;
+            var ProcedureName = Model.ProcedureName;
+            var Id = Model.Id;
+            var WorkPackageId = Model.WorkPackageId;
+            var IsTweeted = Model.IsTweeted;
+
+                <h1>@title</h1>
+
+        <table>
+            <tr>
+                <th>Date made:</th>
+                <td>@madeDate</td>
+            </tr>
+            <tr>
+                <th>Date laid:</th>
+                <td>@laidDate</td>
+            </tr>
+            <tr>
+                <th>Laying body:</th>
+                <td>@LayingBodyName</td>
+            </tr>
+            <tr>
+                <th>Procedure:</th>
+                <td>@ProcedureName</td>
+            </tr>
+            <tr>
+                <th>Instrument URI:</th>
+                <td>@Id</td>
+            </tr>
+            <tr>
+                <th>Work package URI:</th>
+                <td>@WorkPackageId</td>
+            </tr>
+            <tr>
+                <th>Tweeted:</th>
+                <td>@IsTweeted</td>
+            </tr>
+        </table>
+        }
+    </div>
+</section>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadeNLaidWeb", "MadeNLaidWeb\MadeNLaidWeb.csproj", "{855F8FE3-B27B-4B95-9B7B-AF27649A6359}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{855F8FE3-B27B-4B95-9B7B-AF27649A6359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855F8FE3-B27B-4B95-9B7B-AF27649A6359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855F8FE3-B27B-4B95-9B7B-AF27649A6359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855F8FE3-B27B-4B95-9B7B-AF27649A6359}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C00A20E-7723-45E7-86F2-B0D3D8E498D0}
+	EndGlobalSection
+EndGlobal
